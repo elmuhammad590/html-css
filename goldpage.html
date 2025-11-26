@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gold Car Rentals — Gallery</title>
+  <style>
+    :root{
+      --gold:#c99b3b;
+      --gold-dark:#b0832e;
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa5b1;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#061021);color:#eaf0f6;}
+    .container{max-width:1200px;margin:40px auto;padding:24px}
+
+    
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));display:flex;align-items:center;justify-content:center;font-weight:700;color:#081018}
+    h1{font-size:1.5rem;margin:0}
+    p.lead{margin:4px 0 0;color:var(--muted)}
+
+    
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:22px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:20px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+    .cta{display:flex;gap:10px;margin-top:12px}
+    .btn{background:var(--gold);color:#081018;padding:10px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:600}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--gold)}
+
+  
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+    .card{background:var(--card);border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.03);box-shadow:0 6px 20px rgba(2,6,23,0.6);}
+    .card img{width:100%;height:160px;object-fit:cover;display:block}
+    .card .meta{padding:12px}
+    .title{font-weight:700;margin:0 0 6px}
+    .sub{color:var(--muted);font-size:0.9rem;margin:0}
+    .price{margin-top:8px;font-weight:700;color:var(--gold)}
+
+   
+    .location{margin-top:22px;display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .map{background:#031226;border-radius:12px;padding:14px;border:1px dashed rgba(255,255,255,0.03)}
+    .map img{width:100%;height:220px;object-fit:cover;border-radius:8px}
+
+    footer{margin-top:30px;color:var(--muted);font-size:0.9rem;text-align:center}
+
+
+    @media (max-width:880px){
+      .hero, .location{grid-template-columns:1fr}
+      .hero img{height:200px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">G</div>
+        <div>
+          <h1>Gold Car Rentals</h1>
+          <p class="lead">Premium cars. Clear pricing. Local pickup.</p>
+        </div>
+      </div>
+      <nav>
+        <button class="btn">Book Now</button>
+      </nav>
+    </header>
+
+    
+    <div class="hero">
+      <div class="hero-card">
+        <h2 style="margin:0 0 8px">Browse Our Fleet</h2>
+        <p class="lead">Choose from economy, SUVs, and luxury cars — all inspected and insured.</p>
+        <div class="cta">
+          <button class="btn">View all cars</button>
+          <button class="btn ghost">Contact us</button>
+        </div>
+
+        
+        <div class="gallery">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1542367597-6b3b6b43b6d9?auto=format&fit=crop&w=1200&q=60" alt="Silver sedan parked">
+            <div class="meta">
+              <p class="title">Toyota Camry — Economy</p>
+              <p class="sub">Automatic · 5 seats · AC</p>
+              <div class="price">₦18,000 / day</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=60" alt="Black SUV on road">
+            <div class="meta">
+              <p class="title">Nissan X-Trail — SUV</p>
+              <p class="sub">Automatic · 7 seats · Good for family trips</p>
+              <div class="price">₦28,500 / day</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=1200&q=60" alt="White convertible">
+            <div class="meta">
+              <p class="title">Mercedes C — Luxury</p>
+              <p class="sub">Automatic · 5 seats · Premium comfort</p>
+              <div class="price">₦75,000 / day</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1549921296-3a5a6a4e3b6a?auto=format&fit=crop&w=1200&q=60" alt="Compact hatchback in city">
+            <div class="meta">
+              <p class="title">Hyundai i10 — Compact</p>
+              <p class="sub">Manual · 4 seats · Very fuel efficient</p>
+              <div class="price">₦12,000 / day</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      
+      <aside>
+        <div class="card" style="overflow:visible">
+          <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=800&q=60" alt="Hands on steering wheel" style="height:260px;border-bottom-left-radius:0;border-bottom-right-radius:0">
+          <div class="meta">
+            <h3 style="margin:0">Easy pickup in <span style="color:var(--gold)">Lagos</span></h3>
+            <p class="sub">Pickup points across the city — airport, downtown and residential zones.</p>
+            <div style="margin-top:10px">
+              <button class="btn">See pickup locations</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+ 
+    <div class="location">
+      <div class="map">
+        <h3 style="margin-top:0">Locations & pickup</h3>
+        <p class="sub">We service multiple convenient pickup points. Replace this mock map with an embedded Google Map or Mapbox iframe when you're ready.</p>
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1200&q=60" alt="City aerial view map placeholder">
+        <ul style="margin:10px 0 0;padding-left:18px;color:var(--muted)">
+          <li>Murtala Muhammed Intl Airport — Terminal 2 pickup</li>
+          <li>Victoria Island — Central drop-off hub</li>
+          <li>Ikeja GRA — Office pickup</li>
+        </ul>
+      </div>
+
+      <div class="hero-card">
+        <h3 style="margin-top:0">Search by city</h3>
+        <p class="sub">Type a city or choose from popular locations.</p>
+        <form style="margin-top:10px;display:flex;gap:8px;flex-direction:column">
+          <input type="text" placeholder="Enter city or airport" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+          <div style="display:flex;gap:8px">
+            <button class="btn" type="button">Search</button>
+            <button class="btn ghost" type="button">Clear</button>
+          </div>
+          <p class="sub" style="margin-top:12px">Popular: Lagos · Abuja · Port Harcourt</p>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 Gold Car Rentals — Built with ❤️. Replace placeholder images with your fleet photos.
+    </footer>
+  </div>
+</body>
+</html>

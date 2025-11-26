@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input</title>
+
+</head>
+<style>
+  form{
+    font-size: 20px;
+     border: 1px solid black;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     width: 700px;
+    height: 970px;
+    margin-left: 500px;
+    margin-right: 700px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    padding: 15px;
+    border: none;
+  }
+  .submit{
+    color: white;
+    background-color: blue; 
+    border: none;
+    border-radius: 25px;
+    width: 700px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+ 
+  input{
+    padding: 10px;
+  }
+  .register{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: black;
+
+  }
+.fff{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  font-weight: 12px;
+
+}
+
+</style>
+<body>
+    <form action="">
+    <p class="register">Registration Form</p>
+  <div class="fff">
+   
+        <label for=""> Firstname</label>
+        <input placeholder="Enter your first name" required>
+      </div>
+      <div class="fff">
+       
+        <label for=""> middlename (optional)</label>
+        <input type="text" placeholder=" Enter Your middlename">
+      </div>
+      <div class="fff">
+        
+        <label for=""> Lastname</label>
+        <input type="text" placeholder=" Enter Your Lastname" required>
+      </div>
+    <div class="fff">
+     
+      <label for=""> Date of Birth </label>
+      <input type="date" placeholder="dob">
+    </div>
+      <div class="fff" >
+        
+        <label for="">Email Address</label>
+        <input type="text" placeholder="Emaill Address">
+      </div>
+      <div class="fff">
+        
+        <label for="" > phone number</label>
+        <input type="number" placeholder="e.g 08123456789">
+      </div>
+      <div class="fff">
+        
+        <label for="">Password</label>
+        <input type="text" placeholder="Password" required>
+      </div>
+     <div class="fff">
+      <label for=""> Confirm password </label>
+        <input type="text" placeholder="Password" required>
+        <div>
+          <div>
+            <label for="">Gender</label>
+            <label for="">Male</label>
+            <input type="radio"value="Male" name="male">
+            <label for="">Female</label>
+            <input type="radio" value="Female" name="male">
+          </div>
+          <div class="fff">
+            Passport Photograph
+            <label for=""></label>
+            <input type="file">
+          </di>
+          <div>
+          Have you paid?
+          <label for=""></label>
+            <label for="">YES</label>
+            <input type="radio"value="YES" name="male">
+            <label for="">NO</label>
+            <input type="radio" value="NO" name="male">
+         
+                   <div class="text">
+                    Subjects Offered <br>
+
+           
+            <label for="">math</label><br>
+            <input type="checkbox" value="mathematics">
+            <label for="">physic</label><br>
+            <input type="checkbox" value="physic">
+            <label for="">biology</label><br>
+            <input type="checkbox" value="biology">
+            <label for="">commerce</label><br> 
+            <input type="checkbox" value="commerce">
+             <label for="">english</label><br>
+            <input type="checkbox" value="english">
+          </div>
+          <button class="submit">submit</button>
+    </form>
+      
+</body>
+</html>

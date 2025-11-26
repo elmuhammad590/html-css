@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tote & Co. — Accessories Store</title>
+
+  
+  
+
+  <style>
+        
+    :root{
+               
+      --accent: #ff6b6b;            
+    
+     
+      
+    }
+    
+    
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#fff 0%, #fbfdff 100%);
+      color:var(--primary);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      font-size:16px;
+    }
+    a{color:inherit; text-decoration:none}
+
+    
+   
+    header{
+      position: fixed;
+      top:0;
+      backdrop-filter: blur(6px);
+      background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.7));
+      border-bottom:1px solid rgba(15,23,42,0.04);
+      z-index:30;
+      width: 99vw;
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:14px 0;
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+   
+    nav ul{display:flex;gap:18px;align-items:center;padding:0;margin:0;list-style:none}
+    .nav a.btn{padding:10px 16px;border-radius:10px;background:var(--accent);color:white;font-weight:600;box-shadow:0 6px 18px rgba(255,107,107,0.12)}
+ 
+
+    .hero{
+      display:grid;
+      grid-template-columns: 1fr 420px;
+      gap:28px;
+      align-items:center;
+      margin:34px 0 48px;
+    }
+    .hero-copy h1{
+      margin:0 0 10px;
+      font-size:44px;
+      line-height:1.02;
+      letter-spacing:-0.5px;
+    }
+    .hero-copy p{margin:0 0 18px;color:var(--muted);max-width:60ch}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+    .hero .image-card{
+      border-radius:18px; overflow:hidden;
+      box-shadow:0 18px 40px rgba(15,23,42,0.06);
+      height:360px; background-size:cover;background-position:center;
+    }
+
+   
+    .section-title{
+      display:flex;
+      margin:14px 0;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 20px;
+      align-items: center;
+      text-align: center;
+      background-color: whitesmoke;
+         
+        }
+    .grid{
+      display:grid;
+      gap:18px;
+      grid-template-columns: repeat(4,1fr);
+    }
+    .card{
+      border-radius:14px; padding:14px;
+      box-shadow:0 8px 24px rgba(15,23,42,0.04);
+      display:flex;flex-direction:column;gap:10px;
+    }
+    .product-thumb{height:180px; width: 180px;border-radius:10px;overflow:hidden;background-size:cover;background-position:center}
+    .product-thumb:hover{ transform: scale(1.5);}
+    .product-name{font-weight:600}
+    .product-meta{display:flex;justify-content:space-between;align-items:center}
+    .price{font-weight:700}
+
+  
+  
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div>
+          <div style="font-weight:700">Tote & Co.</div>
+          <div style="font-size:13px;">Handmade accessories</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li class="muted"><a href="#products">Products</a></li>
+          <li class="muted"><a href="#about">About</a></li>
+          <li class="muted"><a href="#faq">FAQ</a></li>
+          <li><a class="btn" href="#shop">Shop now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Tote bags & accessories made with care</h1>
+       
+        <div class="hero-cta">
+          <a class="btn" href="#shop">Shop collection</a>
+          <a href="#about" style="padding:10px 14px;border-radius:10px;border:1px solid rgba(15,23,42,0.06);font-weight:600">Our story</a>
+        </div>
+
+        <div style="display:flex;gap:14px;margin-top:18px;flex-wrap:wrap">
+          <div style="background:white;padding:10px 12px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.04)">
+            <strong>Free shipping</strong>
+            <div style="font-size:13px;">On orders above $60</div>
+          </div>
+          <div style="background:white;padding:10px 12px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.04)">
+            <strong>Eco materials</strong>
+            <div style="font-size:13px;">Natural cotton & recycled linings</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="image-card" style="background-image:url('https://images.unsplash.com/photo-1520975915865-4f0d3b9f5eab?q=80&w=1200&auto=format&fit=crop&s=1');"></div>
+      </div>
+    </section>
+
+  
+    <section id="products" aria-labelledby="products-title">
+      <div class="section-title">
+        <h2 id="products-title">Featured products</h2>
+      </div>
+
+      <div class="grid" role="list">
+      
+        <article class="card" role="listitem" aria-labelledby="p1">
+          <div class="product-thumb" style="background-image:url(/first\ tote.avif)"></div>
+          <div>
+            <div id="p1" class="product-name">Canvas Tote — Sand</div>
+            <div style="font-size:13px">Roomy tote, reinforced stitching</div>
+          </div>
+          <div class="product-meta">
+            <div class="price">$48</div>
+            <button style="padding:8px 12px;border-radius:10px;border:1px solid rgba(15,23,42,0.06);background:white;font-weight:600;">Add</button>
+          </div>
+        </article>
+
+        
+        <article class="card" role="listitem" aria-labelledby="p2">
+          <div class="product-thumb" style="background-image:url(/scondtote.avif)"></div>
+          <div>
+            <div id="p2" class="product-name">Mini Pouch — Olive</div>
+            <div style="font-size:13px">Perfect for coins & small items</div>
+          </div>
+          <div class="product-meta">
+            <div class="price">$22</div>
+            <button style="padding:8px 12px;border-radius:10px;border:1px solid rgba(15,23,42,0.06);background:white;font-weight:600;">Add</button>
+          </div>
+        </article>
+
+ 
+        <article class="card" role="listitem" aria-labelledby="p3">
+          <div class="product-thumb" style="background-image:url(/thridtote.avif)"></div>
+          <div>
+            <div id="p3" class="product-name">Leather Keychain</div>
+            <div style="font-size:13px">Hand-stitched leather</div>
+          </div>
+          <div class="product-meta">
+            <div class="price">$16</div>
+            <button style="padding:8px 12px;border-radius:10px;border:1px solid rgba(15,23,42,0.06);background:white;font-weight:600;">Add</button>
+          </div>
+        </article>
+
+      
+        <article class="card" role="listitem" aria-labelledby="p4">
+          <div class="product-thumb" style="background-image:url(/fourthtote.avif)"></div>
+          <div>
+            <div id="p4" class="product-name">Folded Tote — Black</div>
+            <div style="font-size:13px">Compact & practical</div>
+          </div>
+          <div class="product-meta">
+            <div class="price">$52</div>
+            <button style="padding:8px 12px;border-radius:10px;border:1px solid rgba(15,23,42,0.06);background:white;font-weight:600;">Add</button>
+          </div>
+        </article>
+
+       
+        <article class="card" role="listitem" aria-labelledby="p5">
+          <div class="product-thumb" style="background-image:url(/fivethttotoe.avif)"></div>
+          <div>
+            <div id="p5" class="product-name">Market Tote — Stripe</div>
+            <div style="font-size:13px">Classic stripe pattern</div>
+          </div>
+          <div class="product-meta">
+            <div class="price">$44</div>
+            <button style="padding:8px 12px;border-radius:10px;border:1px solid rgba(15,23,42,0.06);background:white;font-weight:600;">Add</button>
+          </div>
+        </article>
+
+        
+        <article class="card" role="listitem" aria-labelledby="p6">
+          <div class="product-thumb" style="background-image:url(/sixthtote.avif)"></div>
+          <div>
+            <div id="p6" class="product-name">Recycled Canvas Tote</div>
+            <div style="font-size:13px">Made from recycled fabrics</div>
+          </div>
+          <div class="product-meta">
+            <div class="price">$58</div>
+            <button style="padding:8px 12px;border-radius:10px;border:1px solid rgba(15,23,42,0.06);background:white;font-weight:600;">Add</button>
+          </div>
+        </article>
+        <div class="grid" role="list">
+      
+        <article class="card" role="listitem" aria-labelledby="p7">
+          <div class="product-thumb" style="background-image:url(/seventhtote.avif)"></div>
+          <div>
+            <div id="p7" class="product-name">Canvas Tote — Sand</div>
+            <div style="font-size:13px">Roomy tote, reinforced stitching</div>
+          </div>
+          <div class="product-meta">
+            <div class="price">$48</div>
+            <button style="padding:8px 12px;border-radius:10px;border:1px solid rgba(15,23,42,0.06);background:white;font-weight:600;">Add</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+   
+   
+      <div class="section-title">
+        <h2>About</h2> 
+        <p>I'm a paragraph. Click here to add your own text and edit me. <br>It’s easy. Just click “Edit Text” or double click me to <br>add your own content and make changes to the font. I’m a <br>great place for you to tell a story and let your users know a <br>little more about you.</p>
+      </div>     
+      </div>
+   
+
+    
+   
+
+  
+</html>

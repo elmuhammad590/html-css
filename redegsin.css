@@ -1,0 +1,13 @@
+div{
+    color: yellow;
+    font-size: 200px;
+}
+
+.build {
+    color: aqua;
+}
+body{
+    background-image: url('/rabbit.jpg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
